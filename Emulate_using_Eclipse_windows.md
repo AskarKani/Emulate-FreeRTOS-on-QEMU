@@ -9,8 +9,8 @@ Download and extract the FreeRTOS source code from [here](https://www.freertos.o
  
 Note: Don't download the LTS release
 
-## Step 3: Install the GNU Arm Embedded Toolchain and add to the PATH
-Download the GNU arm embedded toolchain from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) and extract to the opt directory
+## Step 3: Install the GNU Arm Embedded Toolchain
+Download the GNU arm embedded toolchain from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) and add to the PATH variable
 
 ## Step 4: Install QEMU for Windows
 Download QEMU for windows [here](https://www.qemu.org/download/#windows) and add to the PATH variable
