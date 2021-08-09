@@ -12,17 +12,20 @@ Note: Don't download the LTS release
 ## Step 3: Install the GNU Arm Embedded Toolchain and add to the PATH
 Download the GNU arm embedded toolchain from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) and extract to the opt directory
 
-## Step 4: Open LM3S6965 Demo project on Eclipse
+## Step 4: Install QEMU for Windows
+Download QEMU for windows [here](https://www.qemu.org/download/#windows) and add to the PATH variable
+
+## Step 5: Open LM3S6965 Demo project on Eclipse
 - Click "File->Import" and 
 - Select Existing projects into workspace
 - Navigate to the FreeRTOS/Demo/CORTEX_LM3S6965_GCC_QEMU and click Finish
 
 ![windows](https://user-images.githubusercontent.com/31447839/128664337-50aab27c-91b8-4cb0-a5f7-718900fda32f.png)
 
-## Step 5: Install Make and add to the PATH 
+## Step 6: Install Make and add to the PATH 
 Download Make for Windows from [here](http://gnuwin32.sourceforge.net/packages/make.htm)
 
-## Step 6: Add the Make and GNU Arm Embedded Toolchain to the PATH variable on Eclipse
+## Step 7: Add the Make and GNU Arm Embedded Toolchain to the PATH variable on Eclipse
 - Go to **"Project -> Properties"** 
 - Naviagte to **"C/C++build->Environment"**
 - Add the PATH variable.
@@ -30,25 +33,26 @@ Download Make for Windows from [here](http://gnuwin32.sourceforge.net/packages/m
 ![image](https://user-images.githubusercontent.com/31447839/128664591-bae5bfa5-a654-4caa-848f-0115574d6a7f.png)
 
 
-## Step 5: Build the project and start the qemu
+## Step 8: Build the project and start the qemu
 
 - Make sure the project is built without any error
 - Open the terminal and navigate to the FreeRTOS/Demo/CORTEX_LM3S6965_GCC_QEMU directory
-- Start QEMU by entering the command **"qemu-system-arm -kernel ./Debug/RTOSDemo.elf -S -s -machine lm3s6965evb"**
+- Start QEMU by entering the command **"qemu-system-arm.exe -kernel .\Debug\RTOSDemo.elf -S -s -machine lm3s6965evb"**
 - QEMU window will wait for the gdb connection
 
+![image](https://user-images.githubusercontent.com/31447839/128665014-2248b6eb-ad31-4f3d-be87-403c58e749b7.png)
 
-![image](https://user-images.githubusercontent.com/31447839/127738805-c738c11f-680d-4dad-a14c-cfbeed8e5a6a.png)
 
-## Step 6: Launch the Debug session on Eclipse
+## Step 9: Launch the Debug session on Eclipse
 - In the project explorer, right click on "start_quem_and_debug.launch"
-- Click "Debug As->1 start_quem_and_debug" 
+- Click **"Debug As->1 start_quem_and_debug"** 
 
 ![image](https://user-images.githubusercontent.com/31447839/127738873-d92da98a-77b0-447f-adc3-fc635e361cb4.png)
 
 
 Debug Session will be launched, create breakpoint and analyze the code. 
-![image](https://user-images.githubusercontent.com/31447839/127746206-d9fec50a-1932-4ae0-b9b9-540ed193237d.png)
+![image](https://user-images.githubusercontent.com/31447839/128665101-81118240-1c6c-4a07-98ee-e9a3f7d7f3ab.png)
+
 
 
 ## References
