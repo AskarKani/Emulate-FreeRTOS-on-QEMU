@@ -16,9 +16,9 @@ Download the GNU arm embedded toolchain from [here](https://developer.arm.com/to
 Download QEMU for windows [here](https://www.qemu.org/download/#windows) and add to the PATH variable
 
 ## Step 5: Open LM3S6965 Demo project on Eclipse
-- Click "File->Import" and 
+- Click **"File->Import"** and 
 - Select Existing projects into workspace
-- Navigate to the FreeRTOS/Demo/CORTEX_LM3S6965_GCC_QEMU and click Finish
+- Navigate to the **FreeRTOS/Demo/CORTEX_LM3S6965_GCC_QEMU** and click Finish
 
 ![windows](https://user-images.githubusercontent.com/31447839/128664337-50aab27c-91b8-4cb0-a5f7-718900fda32f.png)
 
