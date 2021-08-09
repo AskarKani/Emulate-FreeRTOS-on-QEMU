@@ -9,7 +9,7 @@ Download and extract the FreeRTOS source code from [here](https://www.freertos.o
  
 Note: Don't download the LTS release
 
-## Step 3: Install the GNU Arm Embedded Toolchain
+## Step 3: Install the GNU Arm Embedded Toolchain and add to the PATH
 Download the GNU arm embedded toolchain from [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) and extract to the opt directory
 
 ## Step 4: Open LM3S6965 Demo project on Eclipse
@@ -17,9 +17,17 @@ Download the GNU arm embedded toolchain from [here](https://developer.arm.com/to
 - Select Existing projects into workspace
 - Navigate to the FreeRTOS/Demo/CORTEX_LM3S6965_GCC_QEMU and click Finish
 
+![windows](https://user-images.githubusercontent.com/31447839/128664337-50aab27c-91b8-4cb0-a5f7-718900fda32f.png)
 
+## Step 5: Install Make and add to the PATH 
+Download Make for Windows from [here](http://gnuwin32.sourceforge.net/packages/make.htm)
 
-## Step 5: Install Make
+## Step 6: Add the Make and GNU Arm Embedded Toolchain to the PATH variable on Eclipse
+- Go to **"Project -> Properties"** 
+- Naviagte to **"C/C++build->Environment"**
+- Add the PATH variable.
+
+![image](https://user-images.githubusercontent.com/31447839/128664591-bae5bfa5-a654-4caa-848f-0115574d6a7f.png)
 
 
 ## Step 5: Build the project and start the qemu
