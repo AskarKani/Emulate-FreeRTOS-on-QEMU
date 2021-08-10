@@ -32,18 +32,22 @@ Download Make for Windows from [here](http://gnuwin32.sourceforge.net/packages/m
 
 ![image](https://user-images.githubusercontent.com/31447839/128664591-bae5bfa5-a654-4caa-848f-0115574d6a7f.png)
 
-
-## Step 8: Build the project and start the qemu
+## Step 8: Build the project
 
 - Make sure the project is built without any error
+
+## Step 9(Optional): Start the QEMU manually
+ **Note: Skip this step if you add qemu to the system PATH variable.Step 10 will start the QEMU automatically**
+ 
 - Open the terminal and navigate to the FreeRTOS/Demo/CORTEX_LM3S6965_GCC_QEMU directory
 - Start QEMU by entering the command **"qemu-system-arm.exe -kernel .\Debug\RTOSDemo.elf -S -s -machine lm3s6965evb"**
 - QEMU window will wait for the gdb connection
 
+
 ![image](https://user-images.githubusercontent.com/31447839/128665014-2248b6eb-ad31-4f3d-be87-403c58e749b7.png)
 
 
-## Step 9: Launch the Debug session on Eclipse
+## Step 10: Launch the Debug session on Eclipse
 - In the project explorer, right click on "start_quem_and_debug.launch"
 - Click **"Debug As->1 start_quem_and_debug"** 
 
