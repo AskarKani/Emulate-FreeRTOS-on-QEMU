@@ -19,9 +19,13 @@ Download the GNU arm embedded toolchain from [here](https://developer.arm.com/to
 
 ![image](https://user-images.githubusercontent.com/31447839/127738571-8994fbd9-4ccc-42a8-98c4-ea41b18d22c3.png)
 
-## Step 5: Build the project and start the qemu
+## Step 5: Build the project
 
 - Make sure the project is built without any error
+
+## Step 6(Optional): Start the QEMU manually
+ **Note: Skip this step if you add qemu to the system PATH variable.Step 7 will start the QEMU automatically**
+
 - Open the terminal and navigate to the FreeRTOS/Demo/CORTEX_LM3S6965_GCC_QEMU directory
 - Start QEMU by entering the command **"qemu-system-arm -kernel ./Debug/RTOSDemo.elf -S -s -machine lm3s6965evb"**
 - QEMU window will wait for the gdb connection
@@ -29,7 +33,7 @@ Download the GNU arm embedded toolchain from [here](https://developer.arm.com/to
 
 ![image](https://user-images.githubusercontent.com/31447839/127738805-c738c11f-680d-4dad-a14c-cfbeed8e5a6a.png)
 
-## Step 6: Launch the Debug session on Eclipse
+## Step 7: Launch the Debug session on Eclipse
 - In the project explorer, right click on "start_quem_and_debug.launch"
 - Click "Debug As->1 start_quem_and_debug" 
 
